@@ -1,0 +1,52 @@
+﻿* {
+    margin: 0 auto;
+    text-align: center;
+}
+
+body {
+    width: 720px;
+    margin: 0;
+    background-color: red;
+}
+
+.mainblock {
+    padding: 0 188px;
+}
+
+.tile-container {
+}
+
+.tile {
+}
+
+.block-title {
+    text-align: center;
+}
+
+.block-description {
+}
+
+.figure {
+}
+
+.form {
+}
+
+footer {
+}
+
+.btn-close {
+    position: absolute;
+    right: -25px;
+    top: -25px;
+}
+
+    .btn-close:hover {
+        background-color: lightcoral;
+    }
+
+
+.contactForm > input,
+.subscribeForm > input {
+    display: block;
+}
