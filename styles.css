@@ -6,11 +6,11 @@
 body {
     width: 720px;
     margin: 0;
-    background-color: red;
+    color: white;
 }
 
 .mainblock {
-    padding: 0 188px;
+    padding: 30px 94px 60px;
 }
 
 .tile-container {
@@ -35,18 +35,46 @@ body {
 footer {
 }
 
+.tile-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 .btn-close {
     position: absolute;
     right: -25px;
     top: -25px;
 }
 
-    .btn-close:hover {
-        background-color: lightcoral;
-    }
+.tile-description-wrapper {
+    padding: 25% 0;
+    height: 100%;
+    width: 100%;
+}
 
+.tile-icon {
+    height: 15%;
+    width: 15%;
+    margin-bottom: 5px;
+}
 
 .contactForm > input,
 .subscribeForm > input {
     display: block;
 }
+
+
+#OurWork .tile-container {
+    /*position: relative;*/
+    overflow: hidden;
+    height: 256px;
+}
+
+    #OurWork .tile-container > .tile {
+        float: left;
+        width: 25%;
+        height: 50%;
+    }
+
+

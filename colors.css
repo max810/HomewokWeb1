@@ -1,0 +1,31 @@
+﻿#OurWork {
+    background-color: rgb(222, 43, 36);
+}
+
+#FacebookAnalysis {
+    background-color: rgb(18, 135, 191);
+}
+
+#GetInTouch {
+    background-color: rgb(42, 42, 42);
+}
+
+footer {
+    background-color: rgb(81, 81, 81);
+}
+
+.border-gray {
+    border-color: rgb(216, 216, 216);
+}
+
+.text-gray {
+    color: rgb(176, 176, 176);
+}
+
+.btn-close:hover {
+    background-color: lightcoral;
+}
+
+.tile-description-color {
+    background-color: rgb(243, 94, 89);
+}
