@@ -3,6 +3,16 @@
     text-align: center;
 }
 
+@keyframes arrowdown {
+    from {
+        transform: none;
+    }
+
+    to {
+        transform: rotate(180deg)
+    }
+}
+
 body {
     width: 720px;
     margin: 0;
@@ -14,6 +24,11 @@ body {
 }
 
 .tile-container {
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
 }
 
 .tile {
@@ -43,8 +58,15 @@ footer {
 
 .btn-close {
     position: absolute;
-    right: -25px;
-    top: -25px;
+    right: -10px;
+    top: -10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgb(222, 43, 36);
+    border: 1.5px solid white;
+    box-sizing: border-box;
+    cursor: pointer;
 }
 
 .tile-description-wrapper {
@@ -59,11 +81,38 @@ footer {
     margin-bottom: 5px;
 }
 
-.contactForm > input,
-.subscribeForm > input {
+.contact-form > input,
+.subscribe-form > input {
     display: block;
 }
 
+input:focus {
+    outline: none;
+    box-shadow: 0px 0px 3px rgb(18, 135, 191);
+}
+
+.subscribe-form > input,
+.contact-form > input {
+    width: 70%;
+    height: 35px;
+    margin-bottom: 5px;
+    text-align: left;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 1px solid silver;
+}
+
+    .subscribe-form > input[type="submit"],
+    .contact-form > input[type="submit"] {
+        text-align: center;
+        width: 120px;
+        margin: 30px auto 50px;
+        background-color: rgb(222, 43, 36);
+        color: white;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
 
 #OurWork .tile-container {
     /*position: relative;*/
@@ -78,3 +127,136 @@ footer {
     }
 
 
+#top-figure {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 5px auto 20px;
+    transition: width 1s;
+    -webkit-transition: width 1s;
+    box-sizing: border-box;
+}
+
+#arrowdown-figure-wrapper {
+    border-radius: 50%;
+    border: 1.5px solid white;
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    margin: 5px auto 10px;
+    transition: transform 0.6s;
+    -webkit-transition: transform 0.6s;
+}
+
+
+#top-figure:hover {
+    width: 100%;
+}
+
+#arrowdown-figure-wrapper:hover {
+    transform: rotate(180deg);
+}
+
+#arrowdown-figure {
+    margin-top: 7px;
+    width: 7px;
+    height: 7px;
+    border-left: 1.5px solid white;
+    border-bottom: 1.5px solid white;
+    -ms-transform: rotate(-45deg); /* IE 9 */
+    -webkit-transform: rotate(-45deg); /* Safari */
+    transform: rotate(-45deg) skew(2deg, 2deg);
+}
+
+#up-triangle-figure {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 18px solid white;
+}
+
+.form-wrapper {
+    border-radius: 3px;
+    background-color: white;
+    position: relative;
+}
+
+.contact-form p {
+    padding: 40px 50px 30px;
+    color: gray;
+}
+
+.contact-form {
+    overflow: auto; /*because submit bottom margin went OUTSIDE the div. (y tho?)*/
+}
+
+#btn-close-symbol {
+    user-select: none;
+    transform: scale(1, 1.2);
+    font-size: 12px;
+    margin: 2px auto;
+}
+
+#follow-container > .tile {
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    box-sizing: content-box;
+    border: 1px solid rgb(81, 81, 81);
+    border-radius: 4px;
+    cursor: pointer;
+    /*width: 15px;
+    height: 15px;*/
+}
+
+
+    #follow-container > .tile:hover {
+        border-color: rgb(222, 43, 36);
+    }
+
+#follow-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#follow-container {
+    width: 30%;
+    margin: 10px auto;
+}
+
+.subscribe-form {
+    width: 70%;
+}
+
+    .subscribe-form > input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+        .subscribe-form > input[type="submit"] {
+            border: 1px solid rgb(81, 81, 81);
+            box-sizing: border-box;
+            background-color: transparent;
+            margin-bottom: 0;
+        }
+
+            .subscribe-form > input[type="submit"]:hover {
+                background-color: rgb(81, 81, 81);
+                border: 1px solid rgb(102, 102, 102);
+            }
+
+.contact-form > input[type="submit"]:hover {
+    background-color: rgb(252, 43, 32);
+}
+
+.form-wrapper {
+    width: 70%;
+}
+
+footer {
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
