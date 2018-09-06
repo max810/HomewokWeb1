@@ -1,3 +1,45 @@
-﻿.tile-description-font {
-    font-size: 12px;
+﻿.font-tile-sub {
+    font-size: 8.5px;
+}
+
+.font-tile {
+    font-size: 14px;
+}
+
+.hv {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px;
+}
+
+.font-b {
+    font-weight: bold;
+}
+
+.font-l {
+    font-weight: lighter;
+}
+
+.font-input {
+    font-size: 10px;
+}
+
+.hv-light {
+    font-family: HelvLight, Helvetica, Arial, sans-serif;
+    font-size: 11px;
+}
+
+.font-title {
+    font-size: 20px;
+}
+
+.font-title-sub {
+    font-size: 11px;
+}
+
+.hv-neue {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.os {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }

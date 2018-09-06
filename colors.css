@@ -22,6 +22,9 @@ footer {
     color: rgb(176, 176, 176);
 }
 
+.text-lightgray {
+    color: rgb(206, 206, 206);
+}
 .btn-close:hover {
     background-color: rgb(252, 43, 32);
 }

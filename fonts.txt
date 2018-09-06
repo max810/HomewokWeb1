@@ -1,7 +1,0 @@
-FontAwesome
-HelveticaNeue Bold
-HelveticaNeue
-HelveticaNeue Light
-Helvetica Normal
-Helvetica Bold
-HelveticaBold # не опечатка
