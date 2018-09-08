@@ -14,17 +14,18 @@
 }
 
 body {
-    width: 720px;
     margin: 0;
     color: white;
 }
 
 .mainblock {
-    padding: 50px 94px 60px;
+    margin: 0 auto;
+    padding: 50px 10% 60px;
 }
 
-.tile-container {
-}
+    .mainblock > * {
+        width: 55%;
+    }
 
 .flex-container {
     display: flex;
@@ -36,6 +37,21 @@ body {
     width: 100%;
     object-fit: cover;
 }
+
+#OurWork .tile-container {
+    /*position: relative;*/
+    overflow: hidden;
+    width: 720px;
+    height: 360px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+    #OurWork .tile-container > .tile {
+        width: 25%;
+        height: 50%;
+    }
 
 .btn-close {
     position: absolute;
@@ -59,7 +75,7 @@ body {
 .tile-icon {
     height: 15%;
     width: 15%;
-    margin-bottom: 5px;
+    margin-bottom: 7.5%;
 }
 
 .contact-form > input,
@@ -75,7 +91,7 @@ input:focus {
 .subscribe-form > input,
 .contact-form > input {
     width: 70%;
-    height: 25px;
+    height: 36px;
     margin-bottom: 5px;
     text-align: left;
     padding-left: 10px;
@@ -86,8 +102,8 @@ input:focus {
     .subscribe-form > input[type="submit"],
     .contact-form > input[type="submit"] {
         text-align: center;
-        width: 90px;
-        margin: 20px auto 40px;
+        width: 120px;
+        margin: 30px auto 40px;
         background-color: rgb(222, 43, 36);
         color: white;
         border: none;
@@ -95,17 +111,6 @@ input:focus {
         cursor: pointer;
     }
 
-#OurWork .tile-container {
-    /*position: relative;*/
-    overflow: hidden;
-    height: 256px;
-}
-
-    #OurWork .tile-container > .tile {
-        float: left;
-        width: 25%;
-        height: 50%;
-    }
 
 
 #top-figure {
@@ -131,7 +136,7 @@ input:focus {
 
 
 #top-figure:hover {
-    width: 100%;
+    width: 720px;
 }
 
 #arrowdown-figure-wrapper:hover {
@@ -164,7 +169,7 @@ input:focus {
 }
 
 .contact-form p {
-    padding: 30px 35px;
+    padding: 35px;
     color: gray;
 }
 
@@ -203,12 +208,8 @@ input:focus {
 }
 
 #follow-container {
-    width: 30%;
-    margin: 10px auto;
-}
-
-.subscribe-form {
-    width: 70%;
+    width: 200px;
+    margin: 20px auto;
 }
 
     .subscribe-form > input {
@@ -233,13 +234,14 @@ input:focus {
 }
 
 .form-wrapper {
-    width: 70%;
+    /*width: 70%;*/
 }
 
 footer {
     height: 35px;
     display: flex;
     align-items: center;
+    background-color: rgb(81, 81, 81);
 }
 
 .contact-form {
@@ -248,4 +250,44 @@ footer {
 
 #email-title {
     margin: 15px auto;
+}
+
+#OurWork {
+    background-color: rgb(222, 43, 36);
+}
+
+#FacebookAnalysis {
+    background-color: rgb(18, 135, 191);
+}
+
+#GetInTouch {
+    background-color: rgb(42, 42, 42);
+}
+
+.border-gray {
+    border-color: rgb(216, 216, 216);
+}
+
+.text-gray {
+    color: rgb(176, 176, 176);
+}
+
+.text-lightgray {
+    color: rgb(206, 206, 206);
+}
+
+.btn-close:hover {
+    background-color: rgb(252, 43, 32);
+}
+
+.tile-description-color {
+    background-color: rgb(243, 94, 89);
+}
+
+#input-email {
+    background-color: rgb(81, 81, 81);
+    border: none;
+    border-radius: 1px;
+    box-shadow: 0px 0px 3px rgb(81, 81, 81);
+    caret-color: white;
 }

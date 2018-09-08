@@ -1,14 +1,13 @@
 ﻿.font-tile-sub {
-    font-size: 8.5px;
+    font-size: 11px;
 }
 
 .font-tile {
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .hv {
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 20px;
 }
 
 .font-b {
@@ -20,7 +19,7 @@
 }
 
 .font-input {
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .hv-light {
@@ -29,11 +28,15 @@
 }
 
 .font-title {
+    font-size: 24px;
+}
+
+.font-title-small {
     font-size: 20px;
 }
 
 .font-title-sub {
-    font-size: 11px;
+    font-size: 13px;
 }
 
 .hv-neue {
